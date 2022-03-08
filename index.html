@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styless.css">
+    <title>CodeNoLimit Survey</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">CodeNoLimit Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform.</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <br>
+            <input name="name" id="name" type="text" placeholder="Enter your name">
+            <br>
+            <label for="email" id="email-label">Email</label>
+            <br>
+            <input name="email" id="email" type="email" placeholder="Enter your email">
+            <br>
+            <label id="number-label" for="number">Age (optional)</label>
+            <br>
+            <input id="number" type="number" placeholder="Enter your name" min="10" max="50" name="number"><br><br>
+            <label>Which option best describes your current role?</label><br>
+            <select id="dropdown">
+                <option disabled selected>Select current role</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Full Time Learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+            </select>
+            <br><br>
+            <label>Would you recommend CodeNoLimit to a friend?</label>
+            <br><br>
+            <input type="radio" value="definitely" name="fav_recommend"> Definitely
+            <br>
+            <input type="radio" value="maybe" name="fav_recommend"> Maybe
+            <br>
+            <input type="radio" value="not-sure" name="fav_recommend"> Not sure
+            <br><br>
+            <label>What is your favorite feature of CodeNoLimit?</label><br>
+            <select id="dropdown">
+                <option disabled selected>Select an option</option>
+                <option>Challenges</option>
+                <option>Comunity</option>
+                <option>Projects</option>
+                <option>Open Source</option>
+            </select>
+            <br><br>
+            <label>What would you like to see improved? (Check all that apply)</label><br><br>
+            <input type="checkbox" value="1"> Front-end Projects<br>
+            <input type="checkbox" value="2"> Back-end Projects<br>
+            <input type="checkbox" value="3">
+            Artificial Intelligence<br>
+            <input type="checkbox" value="4"> Blockchain<br>
+            <input type="checkbox" value="5"> Data
+            Science<br>
+            <input type="checkbox" value="6"> Forum<br><br>
+            <label id="label-label">Any comments or suggestions?</label><br>
+            <textarea name="message" rows="5" cols="50">
+</textarea><br>
+            <input id="submit" type="submit" >
+        </form>
+    </main>
+</body>
+
+</html>
